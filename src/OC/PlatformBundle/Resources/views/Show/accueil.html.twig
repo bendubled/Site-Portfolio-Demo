@@ -1,0 +1,108 @@
+{% extends 'OCPlatformBundle:Show:base.html.twig' %}
+
+{% block title %}Benoit Trigano{% endblock %}
+
+
+{% block menu %}
+	
+{% endblock %}
+
+{% block body %}
+    <div id="typed-strings">
+   
+    <p>Bonjour, bienvenue sur mon site de presentation</p>
+    <p>N'hesitez pas à me contacter,</p>
+    <p>Toujours pret à relever de nouveaux defis</p>
+    <p>Vers l'infini et l'au-delà!!!!!!!</p>
+</div>
+<span class="xxx" id="typed"></span>
+
+
+
+
+
+
+
+
+    <div class="titre_page_acceuil">
+        SITE DE PRESENTATION
+    </div>
+    <div data-aos="fade-up" class="titre_actu">
+        PROJET ACTUEL : JEU PHP "LAST CONSTITUTION"
+    </div>
+    <div class ='qualites_acceuil'>
+                <span class='titre_cat_accueil col-lg-4 col-xs-12'>QUALITES :</span> 
+                <div class ='row mise_forme'>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12  style_nom_4'>ORGANISATION<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> ALTRUISME<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> CREATIVITE<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                </div>
+                <div data-aos="zoom-in" class ='row mise_forme'>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> PERSEVERANCE<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> JQUERY<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> SQL<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                </div>
+    </div>  
+
+
+
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <rss version="2.0">
+      <channel>
+        <title>Titre du channel</title>
+        <link>http://www.bfmtv.com/rss/politique/</link>
+        <description>Description du channel</description>
+     
+      </channel>
+    </rss>
+
+    
+    
+    
+    
+     <div data-aos="fade-up" class="titre_actu ">
+        PRESENTATION
+    </div>
+    <div data-aos="fade-up" class="contenu_presentation">
+        
+
+Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.
+
+Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+
+
+
+        
+    </div>
+    
+    <div data-aos="fade-up" class="titre_actu">
+        ACTUALITES
+    </div>
+    <div data-aos="flip-right" class="contenu_presentation">
+        
+
+ <div class="row">
+			<div   class=" col-lg-12 ">
+                            {% for actualites in  actualites  %}
+                           
+				 
+                                <div data-aos="fade-down" class=" crea_projets">   {{ actualites.titre }}</div>
+                                 
+                                
+                                <div data-aos="fade-down" class="taille_div ">   <a href="{{asset( actualites.url) }}"><img class="col-lg-12" src="{{asset( projets.path_image) }}"/> </a></div>
+                              <div data-aos="fade-down" class="description">{{ actualites.description }}</div>
+                                  
+                                 {% endfor%}
+                        </div>
+                </div>
+
+
+        
+    </div>
+    
+	
+
+	<div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45024.8365579046!2d1.4793082014273484!3d45.145537236931354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f8bd494a823efb%3A0x405d39260ee76f0!2s19100+Brive-la-Gaillarde!5e0!3m2!1sfr!2sfr!4v1509089077251" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'OCPlatformBundle:Show:base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block menu %}
+	
+       
+{% endblock %}
+{% block body %}
+   
+   
+   
+    <div class = 'titre_photo'>
+ {% for photo in photos  %}
+                 {{ photo.titre }}
+                 {% endfor%}</div>
+               
+                 
+                 
+                  <div class="row">
+                  <div class="col-lg-6 date_photo">Date de Parution : {% for photo in photos  %}
+                 {{ photo.date }}
+                 {% endfor%}</div>
+                   {% for photo in photos  %}
+              <img class="photo_photo col-lg-6" src= "{{asset( photo.url) }}"/>
+                 {% endfor%}
+                 
+              
+                 </div>     
+                 
+                 
+                 
+                 
+                 
+                 <div class ="description_photo">DESCRIPTION  </div>
+                 
+                 <div>
+                 {% for photo in photos  %}
+                 {{ photo.description }}
+                 {% endfor%}
+                 </div>
+              
+{% endblock %}
+   

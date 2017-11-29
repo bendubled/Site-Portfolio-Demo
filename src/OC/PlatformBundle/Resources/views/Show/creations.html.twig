@@ -1,0 +1,35 @@
+{% extends 'OCPlatformBundle:Show:base.html.twig' %}
+
+{% block title %}Mes Créations{% endblock %}
+
+{% block menu %}
+    
+{% endblock %}
+
+{% block body %}
+
+	<div class="container">
+            <div class="titre_page_acceuil">MES PROJETS</div>
+            <div class="prez_accueil">"Voici la liste de mes projets, toutes les images son des liens menant vers un projet ou son github."</div>
+               
+		<div class="row">
+			<div   class=" col-lg-12 ">
+                            {% for projets in  creation_projets  %}
+                           
+				 
+                                <div data-aos="fade-down" class=" crea_projets">   {{ projets.titre }}</div>
+                                 
+                                
+                                <div data-aos="fade-down" class="taille_div ">   <a href="{{asset( projets.url) }}"><img class="col-lg-12" src="{{asset( projets.path_image) }}"/> </a></div>
+                              <div data-aos="fade-down" class="description">{{ projets.description }}</div>
+                                  
+                                 {% endfor%}
+                        </div>
+                </div>
+        </div>
+                        
+
+               
+                  
+{% endblock %}
+

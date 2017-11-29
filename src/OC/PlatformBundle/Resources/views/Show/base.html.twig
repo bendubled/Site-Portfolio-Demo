@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+        <title>{% block title %}Test{% endblock %}</title>
+
+		{% stylesheets output='css/final.css'
+                    'libraries/bootstrap/css/bootstrap.css'
+		    'libraries/font-awesome/css/font-awesome.css'
+		    'libraries/animate.css'
+		    'libraries/Hover/css/hover.css'
+		    'css/main.css' 
+                    'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'
+                    'libraries/aos-master/dist/aos.css'
+                    
+                %}
+		    <link type="text/css" rel="stylesheet" href="{{ asset_url }}" />
+		{% endstylesheets %}
+                
+                {% javascripts
+                    'libraries/aos-master/dist/aos.js'
+                    'libraries/typed.js-master/lib/typed.js'
+                    
+                %}
+                <script src="{{asset_url}}"></script>
+                {% endjavascripts %}
+                
+	
+  </head>
+  <body style="background-image:url({{asset('images/backG.jpg') }});">
+  
+          
+    	<div class="container ">
+		<div class="row ">
+			<div class="col-2 ">
+                            <div class="menu_fixe1">
+	   	 <a href="{{ path('accueil') }}">Accueil</a> 
+	</div>
+	<div class="menu_fixe2">
+	   	 <a href="{{ path('creations') }}">Mes créations</a>
+	</div>
+                 <div class="menu_fixe3">
+	   	 <a href="{{ path('photos') }}">PHOTOS</a>
+	</div>
+        <div class="menu_fixe4">
+	   	 <a href="{{ path('cv') }}">CV</a> 
+	</div>
+       
+			    {% block menu %}{% endblock %}
+			</div>
+
+			<div class="col-10">
+			    {% block body %}{% endblock %}
+			</div>   
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container style_footer">
+                    <div id="reseauxSociaux">
+		<a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
+		<a href="https://www.github.com"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
+		<a href="https://www.linkedin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
+	</div>
+			<p class="text-muted footer_style_txt">Product By Benoit Trigano on Symfony 3</p>
+		</div>
+	</div>
+                        
+  </body>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+      
+  var typed = new Typed("#typed", {
+    stringsElement: '#typed-strings'
+  });
+  </script>
+</html>

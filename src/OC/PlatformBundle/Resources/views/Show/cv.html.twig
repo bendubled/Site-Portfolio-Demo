@@ -1,0 +1,115 @@
+{% extends 'OCPlatformBundle:Show:base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block menu %}
+	
+{% endblock %}
+
+{% block body %}
+    
+		
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xs-12 col-lg-4 style_nom'>BENOIT TRIGANO</div>
+                 <div class='col-xs-12 col-lg-4 style_nom_3'>"Feru de technologies"</div>
+                 <div class='col-xs-12 col-lg-4 style_nom'><a href="https://github.com/bendubled">GITHUB</a></div>
+               
+        </div>
+               
+            
+             <div class='row'>
+                <div class='col-xs-12 col-lg-4 style_nom'>DEVELOPPEUR WEB</div>
+                <div class='col-xs-12 col-lg-4 style_nom_3'>" Le developpement Web est plus qu'une passion"</div>
+                <div class='col-xs-12 col-lg-4  style_nom'><a href=" http://docdro.id/jD9PGxo">CV.pdf</a></div>
+            </div>
+            <div class='row'>
+                
+                <div class='offset-8 col-lg-4 style_mail'><a HREF="mailto:jonabe66@hotmail.fr">jonabe66@hotmail.fr</a></div>
+            </div>
+            <div class = 'competences'>
+                <span class='titre_cat col-lg-4 col-xs-12'>COMPETENCES :</span> 
+                <div class ='row mise_forme'>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12  style_nom_2'> HTML/CSS<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> PHP<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> JAVASCRIPT<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                </div>
+                <div data-aos="zoom-in" class ='row mise_forme'>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> AJAX<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> JQUERY<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> SQL<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                </div>
+           <div class ='row mise_forme'>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> SYMFONY<span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> WORDPRESS<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_2'> BOOTSTRAP<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+           </div>
+              
+        </div>
+            <div class ='experiences'> 
+            <span class='titre_cat col-lg-4 col-xs-12'>   EXPERIENCES : </span>
+        <div class='row'>    
+            <div id="zoom" onmouseover="details()"  data-aos="fade-right" class='exp_1 col-lg-4 col-xs-12'>
+                <div class="titre_exp " >FORMATION DEVELOPPEUR WEB</div>
+                <div>AFORMAC</div>
+                <div>Depuis le 07/2017</div>
+                <div>Formation développement web, (Bac+2)</div>
+            </div>
+            <script>
+                $("#details_exp_1").onclick(function(){
+                    $("zoom").slideToggle("slow").delay(3000).fadeOut(500);
+                })
+                </script>
+                
+            <div id="details_exp_1" style="display:none;width:100;height:100;border: 1px solid red;background-color:green;"></div>
+            <div data-aos="fade-up" class='exp_1 col-lg-4 col-xs-12'>
+                <div class="titre_exp">STAGE DEVELOPPEUR WEB</div>
+                <div>ADONIS</div>
+                <div>Depuis le 06/2016 au 08/2016</div>
+                <div>Gestion du parc informatique, développement Web</div>
+            </div>
+            <div data-aos="fade-left" class='exp_1 col-lg-4 col-xs-12'>
+                <div class="titre_exp">EMPLOYE LIBRE SERVICE</div>
+                <div>SUPER U/CAREFOUR/LEADER PRICE/INTERMARCHE</div>
+                <div>Depuis le 12/2015 au 03/2017</div>
+                <div>Mise en rayon, Gestion des stocks, communication clients</div>
+            </div>
+        </div>   
+        <div class='row'>    
+            <div data-aos="fade-down" class='exp_2 col-lg-6 col-xs-12'>
+                <div class="titre_exp">GERANCE</div>
+                <div>Restaurant 'le DIX' Agadir, Maroc</div>
+                <div>Depuis le 01/2010 au 01/2012</div>
+                <div>suivi des stocks, relations fournisseurs, gestion d'équipe, intendance</div>
+            </div>
+            <div data-aos="fade-down" class='exp_2 col-lg-6 col-xs-12 ' >
+                <div class="titre_exp">RESPONSABLE POINT DE VENTE-TECHNICIEN</div>
+                <div>Nature, loisir et developpement Agadir, Maroc</div>
+                <div>Depuis le 01/2003 au 09/2009</div>
+                <div>Vente, réparation de véhicules de loisirs (Campingcar), Agadir/Maroc Suivi des stocks, relation fournisseurs, conseils, réparation, service après vente, prospection.</div>
+            </div>
+        </div>   
+            </div>
+            <div class="project">
+            <span class="titre_cat col-lg-4 col-xs-12">PROJETS :</span>
+            <div class="row">
+            <div data-aos="flip-right" class="col-lg-4 col-xs-12 titre_project">Projet explorateur de fichiers</div>
+            <div data-aos="flip-right" class="col-lg-4 col-xs-12 titre_project">Site Japon</div>
+            <div data-aos="flip-right" class="col-lg-4 col-xs-12 titre_project">Jeux Last_Constitution</div>
+            </div>
+            <div class='row'>
+                
+                <div  class='col-lg-4 col-xs-12 '> <a target="_blank" href='http://109.190.30.178/explo_fichier/explofichier_aliknasa/'><img  width ="100" height="100" src="http://localhost/Symfony_portfolio/web/images/adob.png"/></a></div>
+            <div  class='col-lg-4 col-xs-12'> <a target="_blank" href='http://109.190.30.178/Japon/BECHIK/WebContent/'><img width ="100" height="100" src="http://localhost/Symfony_portfolio/web/images/adob.png"/></a></div>
+            <div  class='col-lg-4 col-xs-12 '> <a target="_blank" href='https://github.com/AformacWEBDEV3brive1/game_theLastConstitution'><img width ="100" height="100" src="http://localhost/Symfony_portfolio/web/images/adob.png"/></a></div>
+            </div>
+            </div> 
+            
+    </div>  
+        
+ 
+    
+{% endblock %}
+
+
+

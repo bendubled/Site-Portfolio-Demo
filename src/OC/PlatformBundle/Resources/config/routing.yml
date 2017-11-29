@@ -1,0 +1,22 @@
+Ben_presentation_homepage:
+    path:     /
+    defaults: 
+       _controller: FrameworkBundle:Redirect:urlRedirect
+       path: /accueil
+       permanent: true
+
+accueil:
+    path:     /accueil
+    defaults: { _controller: OCPlatformBundle:Show:actualites }
+
+cv:
+    path:     /cv
+    defaults: { _controller: OCPlatformBundle:Show:cv }
+
+creations:
+    path:     /creations
+    defaults: { _controller: OCPlatformBundle:Show:creation_projets }
+    
+photos:
+    path:     /accueil/photos
+    defaults: { _controller: OCPlatformBundle:Show:photos }
