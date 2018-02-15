@@ -1,0 +1,24 @@
+OC\PlatformBundle\Entity\experience:
+    type: entity
+    table: null
+    repositoryClass: OC\PlatformBundle\Repository\experienceRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        titre:
+            type: string
+            length: 255
+        lieux:
+            type: string
+            length: 255
+        date:
+            type: string
+            length: 255
+        contenu:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

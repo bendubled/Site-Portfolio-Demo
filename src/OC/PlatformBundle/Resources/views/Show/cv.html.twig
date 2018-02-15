@@ -11,7 +11,9 @@
 		
         <div class='container'>
             <div class='row'>
-                <div class='col-xs-12 col-lg-4 style_nom'>BENOIT TRIGANO</div>
+                <div class='col-xs-12 col-lg-4 style_nom'>BENOIT TRIGANO </div>
+               
+                
                  <div class='col-xs-12 col-lg-4 style_nom_3'>"Feru de technologies"</div>
                  <div class='col-xs-12 col-lg-4 style_nom'><a href="https://github.com/bendubled">GITHUB</a></div>
                
@@ -46,50 +48,20 @@
            </div>
               
         </div>
-            <div class ='experiences'> 
-            <span class='titre_cat col-lg-4 col-xs-12'>   EXPERIENCES : </span>
-        <div class='row'>    
-            <div id="zoom" onmouseover="details()"  data-aos="fade-right" class='exp_1 col-lg-4 col-xs-12'>
-                <div class="titre_exp " >FORMATION DEVELOPPEUR WEB</div>
-                <div>AFORMAC</div>
-                <div>Depuis le 07/2017</div>
-                <div>Formation développement web, (Bac+2)</div>
-            </div>
-            <script>
-                $("#details_exp_1").onclick(function(){
-                    $("zoom").slideToggle("slow").delay(3000).fadeOut(500);
-                })
-                </script>
-                
-            <div id="details_exp_1" style="display:none;width:100;height:100;border: 1px solid red;background-color:green;"></div>
-            <div data-aos="fade-up" class='exp_1 col-lg-4 col-xs-12'>
-                <div class="titre_exp">STAGE DEVELOPPEUR WEB</div>
-                <div>ADONIS</div>
-                <div>Depuis le 06/2016 au 08/2016</div>
-                <div>Gestion du parc informatique, développement Web</div>
-            </div>
-            <div data-aos="fade-left" class='exp_1 col-lg-4 col-xs-12'>
-                <div class="titre_exp">EMPLOYE LIBRE SERVICE</div>
-                <div>SUPER U/CAREFOUR/LEADER PRICE/INTERMARCHE</div>
-                <div>Depuis le 12/2015 au 03/2017</div>
-                <div>Mise en rayon, Gestion des stocks, communication clients</div>
-            </div>
-        </div>   
-        <div class='row'>    
-            <div data-aos="fade-down" class='exp_2 col-lg-6 col-xs-12'>
-                <div class="titre_exp">GERANCE</div>
-                <div>Restaurant 'le DIX' Agadir, Maroc</div>
-                <div>Depuis le 01/2010 au 01/2012</div>
-                <div>suivi des stocks, relations fournisseurs, gestion d'équipe, intendance</div>
-            </div>
-            <div data-aos="fade-down" class='exp_2 col-lg-6 col-xs-12 ' >
-                <div class="titre_exp">RESPONSABLE POINT DE VENTE-TECHNICIEN</div>
-                <div>Nature, loisir et developpement Agadir, Maroc</div>
-                <div>Depuis le 01/2003 au 09/2009</div>
-                <div>Vente, réparation de véhicules de loisirs (Campingcar), Agadir/Maroc Suivi des stocks, relation fournisseurs, conseils, réparation, service après vente, prospection.</div>
-            </div>
-        </div>   
-            </div>
+             <div   class=" col-lg-12 ">
+                            {% for experience in  cv  %}
+                           
+				 
+                                <div data-aos="fade-down" class=" crea_projets">   {{ experience.titre }}</div>
+                                 
+                                
+                                <div data-aos="fade-down" class="taille_div ">   <a href="{{asset( experience.lieux) }}"></a></div>
+                              <div data-aos="fade-down" class="description">{{ experience.date }}</div>
+                              <div data-aos="fade-down" class="description">{{ experience.contenu }}</div>
+                                  
+                                 {% endfor%}
+                        </div>
+           
             <div class="project">
             <span class="titre_cat col-lg-4 col-xs-12">PROJETS :</span>
             <div class="row">

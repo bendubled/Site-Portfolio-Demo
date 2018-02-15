@@ -1,3 +1,6 @@
 @media screen and (min-width: 992px){
     @import "Desktop/global.scss";
 }
+@media screen and (max-width: 992px){
+    @import "phone/main_smart.scss";
+}

@@ -8,6 +8,8 @@ Ben_presentation_homepage:
 accueil:
     path:     /accueil
     defaults: { _controller: OCPlatformBundle:Show:actualites }
+    
+
 
 cv:
     path:     /cv
@@ -20,3 +22,7 @@ creations:
 photos:
     path:     /accueil/photos
     defaults: { _controller: OCPlatformBundle:Show:photos }
+    
+getApi:
+    path:     /accueil/api
+    defaults: { _controller: OCPlatformBundle:Show:api }

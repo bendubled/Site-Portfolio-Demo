@@ -1,5 +1,7 @@
 {% extends 'OCPlatformBundle:Show:base.html.twig' %}
 
+
+
 {% block title %}Benoit Trigano{% endblock %}
 
 
@@ -8,12 +10,13 @@
 {% endblock %}
 
 {% block body %}
-    <div id="typed-strings">
+    
+    <div id="typed-strings" class="col-xs-12 design-acc">
    
-    <p>Bonjour, bienvenue sur mon site de presentation</p>
-    <p>N'hesitez pas à me contacter,</p>
-    <p>Toujours pret à relever de nouveaux defis</p>
-    <p>Vers l'infini et l'au-delà!!!!!!!</p>
+    <p class="col-xs-12 design-acc">Bonjour, bienvenue sur mon site de presentation</p>
+    <p class="col-xs-12 design-acc">N'hesitez pas à me contacter,</p>
+    <p class="col-xs-12 design-acc">Toujours pret à relever de nouveaux defis</p>
+    <p class="col-xs-12 design-acc">Vers l'infini et au-delà!!!!!!!</p>
 </div>
 <span class="xxx" id="typed"></span>
 
@@ -24,11 +27,12 @@
 
 
 
-    <div class="titre_page_acceuil">
+    <h1 class="titre_page_acceuil col-xs-12">
         SITE DE PRESENTATION
-    </div>
+    </h1>
+
     <div data-aos="fade-up" class="titre_actu">
-        PROJET ACTUEL : JEU PHP "LAST CONSTITUTION"
+        PROJET ACTUEL : TABLEAU DE BORD/API/BDD"
     </div>
     <div class ='qualites_acceuil'>
                 <span class='titre_cat_accueil col-lg-4 col-xs-12'>QUALITES :</span> 
@@ -39,22 +43,14 @@
                 </div>
                 <div data-aos="zoom-in" class ='row mise_forme'>
                 <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> PERSEVERANCE<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
-                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> JQUERY<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
-                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> SQL<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> COMMUNICATION<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span><span class="fa fa-star-o"></span></div>
+                <div data-aos="zoom-in" class ='col-lg-4 col-xs-12 style_nom_4'> PROACTIF<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-o"></span><span class="fa fa-star-o"></span></div>
                 </div>
     </div>  
 
 
 
-    <?xml version="1.0" encoding="UTF-8" ?>
-    <rss version="2.0">
-      <channel>
-        <title>Titre du channel</title>
-        <link>http://www.bfmtv.com/rss/politique/</link>
-        <description>Description du channel</description>
-     
-      </channel>
-    </rss>
+  
 
     
     
@@ -62,6 +58,7 @@
     
      <div data-aos="fade-up" class="titre_actu ">
         PRESENTATION
+        
     </div>
     <div data-aos="fade-up" class="contenu_presentation">
         
@@ -71,15 +68,20 @@ Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem per
 Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
 
 
-
         
     </div>
     
     <div data-aos="fade-up" class="titre_actu">
-        ACTUALITES
+        Exemple utilisation API (Education Nat)
     </div>
     <div data-aos="flip-right" class="contenu_presentation">
-        
+        {% dump datas %}
+         
+         {% for i in datas.records%}
+             {{i.fields.lien_site_onisep_fr}}
+            
+            {% endfor %}
+          
 
  <div class="row">
 			<div   class=" col-lg-12 ">
